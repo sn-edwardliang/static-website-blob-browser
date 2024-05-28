@@ -119,7 +119,7 @@ class App extends React.Component {
         {
             link = "?prefix=" + blobName
         } else {
-            link = "/" + blobName
+            link = "https://" + account + ".blob.core.windows.net/" + container + "/" + blobName
         }
         return (
             <a href={link}>
